@@ -7,7 +7,7 @@ export const myContext = createContext(null);
 function ContextComponent({ children }) {
   const [state, dispatch] = useReducer(reducer, initialState);
   return (
-    <myContext.Provider value={{ username: "fahim", state, dispatch }}>
+    <myContext.Provider value={{ username: "Viki", state, dispatch }}>
       {children}
     </myContext.Provider>
   );
